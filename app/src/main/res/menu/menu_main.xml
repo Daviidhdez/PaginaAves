@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.azarquiel.averetrofit.view.MainActivity">
+    <item
+        android:id="@+id/action_user"
+        android:orderInCategory="100"
+        android:title="@string/action_user"
+        android:icon="@drawable/ic_account"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic_logout"
+        android:orderInCategory="100"
+        android:title="@string/ic_logout"
+        android:icon="@drawable/ic_logout"
+        app:showAsAction="always" />
+</menu>

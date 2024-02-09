@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ZonaDetailActivity">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvrownombrezona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/azulo"
+                android:gravity="center"
+                android:paddingVertical="6dp"
+                android:text="Nombre Zona"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tvrowlocalizacionzona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Localizacion (geom_lat , geom_lon)"
+                android:textColor="@color/azulo"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/azulo"
+                android:gravity="center"
+                android:text="Formaciones principales"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvrowformacionprincipaleszona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Formacion Principales"
+                android:textColor="@color/azulo"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/azulo"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="Presentación"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvrowpresentacionzona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Presentacion"
+                android:textColor="@color/azulo"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabrecursos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
